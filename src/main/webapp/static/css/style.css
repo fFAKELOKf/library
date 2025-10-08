@@ -1,0 +1,69 @@
+/* style.css */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1;
+}
+
+.footer {
+    margin-top: auto;
+}
+
+/* Card hover effects */
+.card {
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Table styles */
+.table th {
+    background-color: #f8f9fa;
+}
+
+/* Form styles */
+.form-control:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+/* Badge styles */
+.badge {
+    padding: 0.5em 0.75em;
+}
+
+/* Alert styles */
+.alert {
+    border-radius: 0.5rem;
+}
+
+/* Navbar styles */
+.navbar-brand {
+    font-weight: bold;
+}
+
+/* Book grid */
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .table-responsive {
+        font-size: 0.9rem;
+    }
+
+    .btn-sm {
+        font-size: 0.8rem;
+        padding: 0.25rem 0.5rem;
+    }
+}
